@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sono:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+:root{
+    --color-background:rgb(36, 36, 36);
+    --card-background:rgb(63, 63, 63);
+    --font-title: 'Secular One', sans-serif;
+    --font-text: 'Sono', sans-serif;
+    --size-title: 4em;
+    --border-gris: rgb(141, 141, 141);
+    --text-white: white;
+    --text-gris:rgb(189, 189, 189);
+    --icon-color: yellow;
+}

@@ -1,0 +1,42 @@
+@import url(../../index.css);
+
+.container{
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+.title{
+    color: white;
+    display: inline;
+    width: 15vw;
+    font-size: 2em;
+    font-family: var(--font-text);
+    cursor: pointer;
+    padding-left: 1em;
+    text-decoration: none;
+}
+.guion{
+    color: rgb(197, 136, 255);
+}
+.list{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+}
+.listItem{
+    list-style: none;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font-text);
+}
+.aLink{
+    text-decoration: none;
+    color: white;
+}
+.aLink:hover{
+    color: skyblue;
+}

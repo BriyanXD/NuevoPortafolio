@@ -1,0 +1,37 @@
+[
+    {
+        "name":"DogApi",
+        "description":"En esta aplicacion se busco recopilar informacion sobre las direferentes razas de perros en un formato de coleccion, con informacion basica.",
+        "tech":"JavaScript, React, Redux, Node, Express, Sequelize, Postgres",
+        "repo":"https://github.com/BriyanXD/PI-Dogs",
+        "web":"https://dogs-app-br.vercel.app/",
+        "rol":"Front-End Developer & Back-End Developer",
+        "image":"/src/assets/img/DogApi.jpg",
+        "client":"Henry(Academico)",
+        "images":["/src/assets/img/dogapi1.png",
+        "/src/assets/img/dogapi2.png",
+        "/src/assets/img/dogapi3.png",
+        "/src/assets/img/dogapi4.png",
+        "/src/assets/img/dogapi5.png"]
+    },
+    {
+        "name":"ConcerTeck",
+        "description":"Concerteck es una aplicacion para comprar boletos para eventos musicales, facilitando el proceso de compra con una manera sencilla y rapida.",
+        "tech":"JavaScript, React, Redux, Node, Express, Sequelize, Postgres, SCRUM, GitFlow",
+        "repo":"https://github.com/BriyanXD/concerTeck",
+        "web":"https://concer-teck-front-end.vercel.app/",
+        "rol":"Front-End Developer & Back-End Developer",
+        "image":"/src/assets/img/concerteck.jpg",
+        "client":"Henry(Academico)",
+        "images":["/src/assets/img/concerteck1.png",
+        "/src/assets/img/concerteck2.png",
+        "/src/assets/img/concerteck3.png",
+        "/src/assets/img/concerteck4.png",
+        "/src/assets/img/concerteck5.png",
+        "/src/assets/img/concerteck6.png",
+        "/src/assets/img/concerteck7.png",
+        "/src/assets/img/concerteck8.png",
+        "/src/assets/img/concerteck9.png"
+    ]
+    }
+]
