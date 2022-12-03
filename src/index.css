@@ -10,13 +10,17 @@ body{
     margin: 0;
 }
 :root{
-    --color-background:rgb(36, 36, 36);
-    --card-background:rgb(63, 63, 63);
+    --color-backgroundDark:rgb(36, 36, 36);
+    --color-backbroundLight: rgb(255, 255, 255);
+    --card-backgroundDark:rgb(63, 63, 63);
+    --card-backgroundLight:rgb(209, 209, 209);
     --font-title: 'Secular One', sans-serif;
     --font-text: 'Sono', sans-serif;
     --size-title: 4em;
     --border-gris: rgb(141, 141, 141);
-    --text-white: white;
-    --text-gris:rgb(189, 189, 189);
-    --icon-color: yellow;
+    --text-dark: white;
+    --text-light: rgb(34, 34, 34);
+    --text-gris:rgb(105, 105, 105);
+    --icon-dark: yellow;
+    --icon-light: rgb(57, 67, 212);
 }

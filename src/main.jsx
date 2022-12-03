@@ -9,10 +9,12 @@ import Abount from "./components/abount/Abount"
 import {BrowserRouter,Routes, Route} from "react-router-dom"
 import Modal from './components/modal/Modal';
 import AboutMe from "./components/AboutMe/AboutMe"
+import {ThemeProvider} from "./context/ThemeContext"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
         <BrowserRouter>
+        <ThemeProvider>
           <Routes>
             <Route path='/' element={<div>
                 <Navigation/>
@@ -24,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path='/project/:name' element={<Modal/>}/>
             <Route path='/about' element={<AboutMe/>}/>
           </Routes>
+        </ThemeProvider>
         </BrowserRouter>
   </React.StrictMode>
 )

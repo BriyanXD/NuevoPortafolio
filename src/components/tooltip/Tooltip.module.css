@@ -9,13 +9,18 @@
 }
 .info{
     position: absolute;
-    background-color: var(--card-background);
     border: 1px solid var(--border-gris);
     font-family: var(--font-text);
     padding: .2em;
     top: -1.5em;
     z-index: 1;
     visibility: hidden;
+}
+.dark{
+    background-color: var(--card-backgroundDark);
+}
+.light{
+    background-color: var(--color-backbroundLight);
 }
 .container:hover > .info{
     visibility: visible;

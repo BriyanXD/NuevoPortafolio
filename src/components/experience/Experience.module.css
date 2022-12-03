@@ -1,14 +1,21 @@
 @import url(../../index.css);
 
 .container{
-    background-color: var(--color-background);
-    color: var(--text-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vH;
+    height: 100vh;
+    transition: 2s;
+}
+.dark{
+    background-color: var(--color-backgroundDark);
+    color: var(--text-dark);
+}
+.light{
+   background-color: var(--color-backbroundLight);
+   color:var(--text-light) ;
 }
 .cardContainer{
     display: flex;
@@ -21,7 +28,7 @@
     font-size: 4em;
 }
 .titleStack{
-    color: gray;
+    color: var(--text-gris);
 }
 .title{
     display: inline-block;
@@ -37,9 +44,15 @@
     outline: .2em solid var(--border-gris);
 }
 .icon{
-    color: var(--icon-color);
     width: 25%;
     font-size: 2.5em;
+    transition: 2s;
+}
+.icondark{
+    color: var(--icon-dark);
+}
+.iconlight{
+    color:  var(--icon-light);
 }
 .description{
     font-family: var(--font-text);

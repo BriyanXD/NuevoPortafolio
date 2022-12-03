@@ -1,14 +1,20 @@
 @import url(../../index.css);
 
-.containerOn{
-    background-color: rgba(17, 17, 17, .8);
+.container{
     width: 100%;
     height: 100vh;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.dark{
+    background-color: var(--color-backgroundDark);
+    color: var(--text-dark);
+}
+.light{
+    background-color: var(--color-backgroundLight);
+    color: var(--text-light);
 }
 .containerButton{
     position: fixed;
@@ -16,20 +22,25 @@
     width: 100%;
 }
 .closeButton{
-    width: 3em;
-    height: 3em;
-    margin: 1em;
+    width: 1em;
+    height: 1em;
+    margin: .3em;
     border: 0;
+    text-decoration: none;
+    background-color: var(--card-background);
+    font-family: var(--font-text);
+    font-size: 3em;
+    cursor: pointer;
+    border-radius: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    background-color: var(--card-background);
-    color: yellow;
-    font-family: var(--font-text);
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5%;
+}
+.closelight{
+    color: var(--icon-light);
+}
+.closedark{
+    color: var(--icon-dark);
 }
 .closeButton:hover{
     background-color: var(--border-gris);
@@ -43,7 +54,6 @@
     height: 95vh;
     background-color: var(--color-background);
     border-radius: .5%;
-    color: white;
     padding: 1%;
     overflow: auto;
 }
@@ -68,10 +78,15 @@
     margin: 0;
 }
 .subtitle{
-    border-top: 1px solid white;
     font-family: var( --font-title);
     font-size: 1.2em;
     font-weight: 400;
+}
+.subtitledark{
+    border-top: 1px solid var(--text-dark);
+}
+.subtitlelight{
+    border-top: 1px solid var(--text-light);
 }
 .tech{
     font-family: var(--font-text);
@@ -95,12 +110,16 @@
 .icon{
     width: 3em;
     font-size: 2em;
-    color: yellow;
     transition: .5s;
 }
+.icondark{
+    color: var(--icon-dark);
+}
+.iconlight{
+    color: var(--icon-light);
+}
 .icon:hover{
-    font-size: 2.5em;
-    color: yellow;
+    transform: scale(150%);
 }
 .footer{
     font-family: var(--font-text);
