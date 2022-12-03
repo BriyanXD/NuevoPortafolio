@@ -1,0 +1,51 @@
+@import url(../../index.css);
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.dark{
+    background-color: var(--color-backgroundDark);
+    color: var(--text-dark);
+}
+.light{
+    background-color: var(--color-backbroundLight);
+    color: var(--text-light);
+}
+.containerInfo{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 2em;
+}
+.title{
+    display: inline;
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 4em;
+}
+.link{
+    text-decoration: none;
+}
+.linkdark{
+    color: var(--icon-dark);
+}
+.linklight{
+    color: var(--icon-light);
+}
+.message{
+    display: inline;
+    margin: 0;
+    font-family: var(--font-text);
+}
+.containerImage{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 70vh;
+}

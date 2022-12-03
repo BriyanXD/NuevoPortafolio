@@ -10,12 +10,14 @@ import {BrowserRouter,Routes, Route} from "react-router-dom"
 import Modal from './components/modal/Modal';
 import AboutMe from "./components/AboutMe/AboutMe"
 import {ThemeProvider} from "./context/ThemeContext"
+import Error from "./components/error/Error"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
         <BrowserRouter>
         <ThemeProvider>
           <Routes>
+            <Route path='*' element={<Error/>}/>
             <Route path='/' element={<>
                 <Navigation/>
                 <Home/>

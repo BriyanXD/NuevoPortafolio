@@ -21,6 +21,6 @@ body{
     --text-dark: white;
     --text-light: rgb(34, 34, 34);
     --text-gris:rgb(105, 105, 105);
-    --icon-dark: yellow;
+    --icon-dark: rgb(255, 255, 0);
     --icon-light: rgb(57, 67, 212);
 }
