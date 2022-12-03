@@ -3,10 +3,10 @@ import styles from './Home.module.css';
 
 const Home = () => {
     return (
-        <div className={styles.container} id='home'>
+        <section className={styles.container} id='home'>
             <h1 className={styles.title}>BRIYAN BOHTELO</h1>
-            <p className={styles.subtitle}>FULL STACK DEVELOPER & APP DEVELOPER</p>
-        </div>
+            <h2 className={styles.subtitle}>FULL STACK DEVELOPER & APP DEVELOPER</h2>
+        </section>
     );
 }
 

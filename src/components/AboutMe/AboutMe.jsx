@@ -10,28 +10,28 @@ const AboutMe = () => {
     const {theme} = useContext(ThemeContext);
 
     return (
-        <div className={`${styles.container} ${styles[theme]}`}>
-            <h1 className={styles.title}>About Me</h1>
+        <section className={`${styles.container} ${styles[theme]}`}>
+            <h2 className={styles.title}>About Me</h2>
             <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/'>Briyan<span className={styles.guion}>_</span></Link>
             <div className={styles.containerInfo}>
-                <div className={styles.containerSubtitle}><h2 className={styles.subtitle}>FRONT-END</h2></div>
+                <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>FRONT-END</h3></div>
                 <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
                     {technologies.frontend.map(element => <Tooltip key={element.name} info={element.name}><img className={styles.image} src={element.image} alt={element.name} /></Tooltip> )}
                 </div>
-                <div className={styles.containerSubtitle}><h2 className={styles.subtitle}>BACK-END</h2></div>
+                <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>BACK-END</h3></div>
                 <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
                     {technologies.backend.map(element => <Tooltip key={element.name} info={element.name}><img className={styles.image} src={element.image} alt={element.name} /></Tooltip> )}
                 </div>
-                <div className={styles.containerSubtitle}><h2 className={styles.subtitle}>DATABASE</h2></div>
+                <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>DATABASE</h3></div>
                 <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
                     {technologies.database.map(element => <Tooltip key={element.name} info={element.name}><img className={styles.image} src={element.image} alt={element.name} /></Tooltip> )}
                 </div>
-                <div className={styles.containerSubtitle}><h2 className={styles.subtitle}>OTHERS</h2></div>
+                <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>OTHERS</h3></div>
                 <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
                     {technologies.others.map(element => <Tooltip key={element.name} info={element.name}><img className={styles.image} src={element.image} alt={element.name} /></Tooltip> )}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

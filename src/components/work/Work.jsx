@@ -10,12 +10,12 @@ const Work = () => {
     const {theme} = useContext(ThemeContext);
 
     return (
-        <div className={`${styles.container} ${styles[theme]}`} id='work'>
+        <section className={`${styles.container} ${styles[theme]}`} id='work'>
             <h2 className={`${styles.title} ${styles[`title${theme}`]}`}>My Work</h2>
-            <div className={styles.works}>
+            <section className={styles.works}>
                 {works.map((element) => <CardWork work={element} key={element.name}/>)}
-            </div>
-        </div>
+            </section>
+        </section>
     );
 }
 

@@ -9,10 +9,10 @@ const Abount = () => {
 
     const {theme} = useContext(ThemeContext);
     return (
-        <div id='abount' className={`${styles.container} ${styles[theme]}`}>
+        <section id='abount' className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.containerInfo}>
                 <h2 className={styles.title}>Briyan<br/>  Bohtelo</h2>
-                <p className={styles.subtitle}>FULLSTACK DEVELOPER</p>
+                <h3 className={styles.subtitle}>FULLSTACK DEVELOPER</h3>
                 <p className={styles.description}>
                     Tienes un proyecto interesante en el que te pueda ayudar ?
                     Estoy disponible para proyectos o para formar parte de tu equipo para aportar mi experiencia y crecer juntos.
@@ -23,7 +23,7 @@ const Abount = () => {
             <div className={styles.containerImage}>
                 <img className={styles.image} src={myPhotograpy} alt="" />
             </div>
-        </div>
+        </section>
     );
 }
 

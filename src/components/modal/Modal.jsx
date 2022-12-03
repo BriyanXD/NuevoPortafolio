@@ -21,11 +21,11 @@ const Modal = () => {
 
 
     return (
-        <div className={`${styles.container} ${styles[theme]}`}>
+        <section className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.containerButton}>
                 <Link className={`${styles.closeButton} ${styles[`close${theme}`]}`} to="/">{"<"}</Link>
             </div>
-            <div className={styles.info}>
+            <article className={styles.info}>
                 <h2 className={styles.title}>{work.name}</h2>
                 <div className={styles.containerDescription}>
                     <p className={styles.description}>{work.description}</p>
@@ -48,8 +48,8 @@ const Modal = () => {
                     {work.images.map((image, index) => <img className={styles.image} src={image} key={index} /> )}
                 </div>
                 <p className={styles.footer}>Desarrolado por @Briyan Bohtelo</p>
-            </div>
-        </div>
+            </article>
+        </section>
     );
 }
 

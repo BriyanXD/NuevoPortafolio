@@ -12,7 +12,7 @@ const Navigaction = () => {
 
     const {theme, handleTheme} = useContext(ThemeContext);
     return (
-            <div className={styles.container}>
+            <nav className={styles.container}>
                     <Link className={`${styles.title} ${styles[`title${theme}`]}`} to='/'>Briyan
                     <span className={styles.guion}>_</span>
                     </Link>
@@ -26,7 +26,7 @@ const Navigaction = () => {
                         <button className={`${styles.button} ${styles[`link${theme}`]}`} onClick={handleTheme}><FontAwesomeIcon icon={theme === 'light'? faSun: faMoon}/></button>
                     </li>
                 </ul>
-            </div>
+            </nav>
     );
 }
 
