@@ -1,0 +1,25 @@
+@import url(../../index.css);
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-backgroundDark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    animation-name: loadAnimation;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadAnimation {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

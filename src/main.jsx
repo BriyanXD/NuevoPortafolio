@@ -1,19 +1,20 @@
-import React from 'react'
+import React,{lazy, Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import Home from "./components/home/Home"
-import Experience from "./components/experience/Experience";
-import Navigation from "./components/navigation/Navigaction";
-import Work from "./components/work/Work";
-import Abount from "./components/abount/Abount"
 import {BrowserRouter,Routes, Route} from "react-router-dom"
-import Modal from './components/modal/Modal';
-import AboutMe from "./components/AboutMe/AboutMe"
+import './index.css'
 import {ThemeProvider} from "./context/ThemeContext"
-import Error from "./components/error/Error"
-
+import Load from "./components/load/Load";
+const Home = lazy(() => import("./components/home/Home"));
+const Experience = lazy(() => import("./components/experience/Experience"))
+const Navigation = lazy(() => import("./components/navigation/Navigaction"))
+const Work = lazy(() => import("./components/work/Work"));
+const Abount = lazy(() => import("./components/abount/Abount"))
+const Modal = lazy(() => import('./components/modal/Modal'))
+const AboutMe = lazy(() => import("./components/AboutMe/AboutMe"))
+const Error = lazy(() => import("./components/error/Error"))
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+        <Suspense fallback={<Load/>}>
         <BrowserRouter>
         <ThemeProvider>
           <Routes>
@@ -30,5 +31,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </Routes>
         </ThemeProvider>
         </BrowserRouter>
+        </Suspense>
   </React.StrictMode>
 )
