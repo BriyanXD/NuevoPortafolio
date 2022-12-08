@@ -24,3 +24,10 @@ body{
     --icon-dark: rgb(255, 255, 0);
     --icon-light: rgb(57, 67, 212);
 }
+*::-webkit-scrollbar-thumb{
+    background: var(--border-gris);
+    border-radius: 5px;
+}
+*::-webkit-scrollbar{
+    width: .5em;
+}
