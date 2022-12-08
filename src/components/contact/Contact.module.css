@@ -27,6 +27,13 @@
 .email{
     font-family: var(--font-text);
     font-size: 1.3em;
+    transition: 2s;
+}
+.emaildark{
+    color: var(--icon-dark);
+}
+.emaillight{
+    color: var(--icon-light);
 }
 .containerInfo{
     padding-left: 4em;
@@ -39,6 +46,7 @@
 }
 .icon{
     width: 3em;
+    cursor: pointer;
 }
 .containerForm{
     width: 70%;
