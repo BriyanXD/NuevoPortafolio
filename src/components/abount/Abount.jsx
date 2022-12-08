@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import styles from "./Abount.module.css";
-import myPhotograpy from "../../assets/img/Perfil.jpeg"
+import dark from "../../assets/img/Perfildark.jpeg"
+import light from "../../assets/img/Perfillight.jpeg"
 import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext"
 
@@ -21,7 +22,7 @@ const Abount = () => {
                 <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about'>Mas sobre mis conocimientos</Link>
             </div>
             <div className={styles.containerImage}>
-                <img className={styles.image} src={myPhotograpy} alt="" />
+                <img className={styles.image} src={theme === 'dark' ? dark : light} alt="" />
             </div>
         </section>
     );

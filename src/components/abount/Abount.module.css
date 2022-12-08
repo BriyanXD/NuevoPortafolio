@@ -42,13 +42,17 @@
     width: 70%;
 }
 .containerImage{
-    width: 50%;
+    width: 40%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
 .image{
-    width: 70%;
-    border-radius: 50%;
+    min-width: 370px;
+    max-height: 500px;
+    border-radius: .5em;
+    transition: 2s;
+    position: relative;
 }
 .button{
     outline: 0;

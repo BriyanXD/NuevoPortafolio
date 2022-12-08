@@ -12,6 +12,7 @@ const Abount = lazy(() => import("./components/abount/Abount"))
 const Modal = lazy(() => import('./components/modal/Modal'))
 const AboutMe = lazy(() => import("./components/AboutMe/AboutMe"))
 const Error = lazy(() => import("./components/error/Error"))
+const Contact = lazy(() => import("./components/contact/Contact"))
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
         <Suspense fallback={<Load/>}>
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Experience/>
                 <Work/>
                 <Abount/>
+                <Contact/>
             </>}/>
             <Route path='/project/:name' element={<Modal/>}/>
             <Route path='/about' element={<AboutMe/>}/>
