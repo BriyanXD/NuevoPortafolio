@@ -1,0 +1,43 @@
+@import url(../../index.css);
+
+.container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: 2s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.dark{
+    background-color: var(--color-backgroundDark);
+    color: var(--text-dark);
+}
+.light{
+    background-color: var( --color-backbroundLight);
+    color: var( --text-light);
+}
+.container::after{
+    content: "";
+    background-color: var(--border-gris);
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -45%;
+}
+.title{
+    display: inline;
+    font-family: var( --font-text);
+}
+.icon{
+    font-size: 2em;
+    cursor: pointer;
+    transition: 1s;
+}
+.icon:hover{
+    transform: scale(1.2);
+}

@@ -1,20 +1,20 @@
 @import url(../../index.css);
 
 .container{
-    width: 5em;
     position: relative;
     display: flex;
     justify-content: center;
-    transition: 2s;
 }
 .info{
     position: absolute;
     border: 1px solid var(--border-gris);
     font-family: var(--font-text);
+    font-size: .7em;
     padding: .2em;
-    top: -1.5em;
+    top: -2em;
     z-index: 1;
-    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
 }
 .dark{
     background-color: var(--card-backgroundDark);
@@ -23,6 +23,7 @@
     background-color: var(--color-backbroundLight);
 }
 .container:hover > .info{
-    visibility: visible;
-    transition: 2s;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 1s;
 }
