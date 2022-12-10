@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import styles from "./Abount.module.css";
 import dark from "../../assets/img/Perfildark.jpeg"
 import light from "../../assets/img/Perfillight.jpeg"
@@ -9,6 +9,26 @@ const Abount = () => {
 
 
     const {theme} = useContext(ThemeContext);
+
+    const refExperience = useRef();
+
+    let options = {
+        root: null,
+        threshold: '0.30'
+      };
+
+    const handleIntersection = (e) => {
+        if(e[0].isIntersecting){
+            e[0].target.classList.add(`${styles.animation}`)
+    }
+}
+
+    useEffect(() => {
+        let observer = new IntersectionObserver(handleIntersection, options);
+        observer.observe(refExperience.current);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section id='abount' className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.containerInfo}>
@@ -21,7 +41,7 @@ const Abount = () => {
                 </p>
                 <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about'>Mas sobre mis conocimientos</Link>
             </div>
-            <div className={styles.containerImage}>
+            <div ref={refExperience} className={styles.containerImage}>
                 <img className={styles.image} src={theme === 'dark' ? dark : light} alt="" />
             </div>
         </section>

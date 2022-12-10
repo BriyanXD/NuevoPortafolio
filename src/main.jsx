@@ -13,7 +13,7 @@ const Modal = lazy(() => import('./components/modal/Modal'))
 const AboutMe = lazy(() => import("./components/AboutMe/AboutMe"))
 const Error = lazy(() => import("./components/error/Error"))
 const Contact = lazy(() => import("./components/contact/Contact"))
-import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
         <Suspense fallback={<Load/>}>

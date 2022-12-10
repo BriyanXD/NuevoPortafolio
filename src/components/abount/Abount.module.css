@@ -46,6 +46,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    opacity: 0;
 }
 .image{
     min-width: 370px;
@@ -73,4 +74,17 @@
 .buttondark{
     background-color: var(--icon-dark);
     color: var(--text-light);
+}
+.animation{
+    opacity: 1;
+    animation: entrada 5s;
+}
+
+@keyframes entrada{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

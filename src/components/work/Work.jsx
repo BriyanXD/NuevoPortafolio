@@ -1,4 +1,4 @@
-import React,{useContext}from 'react';
+import React,{useContext, useRef, useEffect}from 'react';
 import styles from "./Work.module.css";
 import works from "../../assets/json/myWorks.json";
 import CardWork from "../cardWork/CardWork";
@@ -9,10 +9,29 @@ const Work = () => {
 
     const {theme} = useContext(ThemeContext);
 
+    const refExperience = useRef();
+
+    let options = {
+        root: null,
+        threshold: '0.30'
+      };
+
+    const handleIntersection = (e) => {
+        if(e[0].isIntersecting){
+            e[0].target.classList.add(`${styles.animation}`)
+    }
+}
+
+    useEffect(() => {
+        let observer = new IntersectionObserver(handleIntersection, options);
+        observer.observe(refExperience.current);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section className={`${styles.container} ${styles[theme]}`} id='work'>
             <h2 className={`${styles.title} ${styles[`title${theme}`]}`}>My Work</h2>
-            <section className={styles.works}>
+            <section ref={refExperience} className={styles.works}>
                 {works.map((element) => <CardWork work={element} key={element.name}/>)}
             </section>
         </section>

@@ -1,17 +1,37 @@
-import React,{useContext} from 'react';
+import React,{useContext, useRef, useEffect} from 'react';
 import styles from "./Experience.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServer, faDesktop, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import ThemeContext from '../../context/ThemeContext';
 
+
 const Experience = () => {
 
     const {theme} = useContext(ThemeContext);
 
+    const refExperience = useRef();
+
+    let options = {
+        root: null,
+        threshold: '0.30'
+      };
+
+    const handleIntersection = (e) => {
+        if(e[0].isIntersecting){
+            e[0].target.classList.add(`${styles.animation}`)
+    }
+}
+
+    useEffect(() => {
+        let observer = new IntersectionObserver(handleIntersection, options);
+        observer.observe(refExperience.current);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section className={`${styles.container} ` + `${styles[theme]}`} id='experience'>
             <h2 className={styles.titlePrincipal}>My Experience</h2>
-            <div className={styles.cardContainer}>
+            <div ref={refExperience} className={styles.cardContainer}>
                 <section className={`${styles.card} ${styles.cardFinal}`}>
                     <FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={faDesktop}/>
                     <h3 className={styles.title}> FRONTEND</h3>

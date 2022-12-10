@@ -31,5 +31,18 @@
 .works{
     display: flex;
     justify-content: space-around;
+    opacity: 0;
+}
+.animation{
+    animation: entrada 2s;
+    opacity: 1;
+}
 
+@keyframes entrada{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
