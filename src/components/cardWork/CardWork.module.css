@@ -81,3 +81,14 @@
 .roldark{
     color: var(--text-gris);
 }
+
+@media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .container{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .container{
+        width: 60%;
+    }
+}

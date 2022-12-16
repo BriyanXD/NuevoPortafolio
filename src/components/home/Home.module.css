@@ -16,7 +16,7 @@
 .title{
     font-family: var(--font-title);
     font-weight: 400;
-    font-size: 700%;
+    font-size: 7em;
     margin: 0;
     color: white;
     text-shadow: black -0.05em 0.02em 0.1em;
@@ -24,6 +24,23 @@
 .subtitle{
     font-family: var(--font-title);
     font-weight: 400;
-    font-size: 300%;
+    font-size: 3em;
     margin: 0;
+}
+
+@media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .title{
+        font-size: 3em;
+    }
+    .subtitle{
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .title{
+        font-size: 4em;
+    }
+    .subtitle{
+        font-size: 2em;
+    }
 }

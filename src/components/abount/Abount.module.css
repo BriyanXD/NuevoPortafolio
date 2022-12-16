@@ -46,7 +46,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    opacity: 0;
+    visibility: hidden;
 }
 .image{
     min-width: 370px;
@@ -76,7 +76,7 @@
     color: var(--text-light);
 }
 .animation{
-    opacity: 1;
+    visibility: visible;
     animation: entrada 5s;
 }
 

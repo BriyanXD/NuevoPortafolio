@@ -31,11 +31,11 @@
 .works{
     display: flex;
     justify-content: space-around;
-    opacity: 0;
+    visibility: hidden;
 }
 .animation{
     animation: entrada 2s;
-    opacity: 1;
+    visibility: visible;
 }
 
 @keyframes entrada{
@@ -44,5 +44,26 @@
     }
     to{
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .container{
+        height: auto;
+    }
+    .works{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .container{
+        height: auto;
+    }
+    .works{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
 }
