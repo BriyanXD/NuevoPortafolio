@@ -27,6 +27,10 @@ const Navigaction = () => {
             console.log(refButton.current.classList)
         }
     }
+    const handleClose = () => {
+        handleButton();
+        handleTheme();
+    }
 
     return (
             <nav className={styles.container}>
@@ -41,7 +45,7 @@ const Navigaction = () => {
                     <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#abount">Abount</a></li>
                     <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#contact">Contact</a></li>
                     <li className={styles.listItem}>
-                        <button className={`${styles.button} ${styles[`link${theme}`]}`} onClick={handleTheme}><FontAwesomeIcon onClick={handleButton} icon={theme === 'light'? faSun: faMoon}/></button>
+                        <button className={`${styles.button} ${styles[`link${theme}`]}`} onClick={handleClose}><FontAwesomeIcon onClick={handleButton} icon={theme === 'light'? faSun: faMoon}/></button>
                     </li>
                 </ul>
             </nav>
