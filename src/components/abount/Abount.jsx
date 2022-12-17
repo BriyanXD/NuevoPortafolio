@@ -39,7 +39,7 @@ const Abount = () => {
                     Estoy disponible para proyectos o para formar parte de tu equipo para aportar mi experiencia y crecer juntos.
                     Enviame un correo electronico o enviame un mensaje por Linkedin.
                 </p>
-                <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about'>Mas sobre mis conocimientos</Link>
+                <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about'>Mas sobre mis conocimientos...</Link>
             </div>
             <div ref={refExperience} className={styles.containerImage}>
                 <img className={styles.image} src={theme === 'dark' ? dark : light} alt="" />

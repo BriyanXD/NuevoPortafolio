@@ -41,3 +41,21 @@
 .icon:hover{
     transform: scale(1.2);
 }
+@media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .container{
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .container{
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

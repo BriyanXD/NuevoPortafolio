@@ -63,17 +63,111 @@
     border: 0;
     cursor: pointer;
 }
+.buttonOpenCloseR{
+    display: none;
+}
 
 @media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .buttonOpenCloseR{
+        margin-left: .4em;
+        margin-top: .4em;
+        display: inline;
+        font-size: 2em;
+        border-radius: 50%;
+    }
+    .container{
+        gap: 1em;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+    .list{
+        width: 100%;
+        gap: 1em;
+        height: 100vh;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: -150vh;
+        transition: 1s;
+        z-index: -1;
+        padding: 0;
+    }
+    .listView{
+        top: 0;
+    }
+    .listdark{
+        background-color: rgba(0, 0, 0,.9);
+    }
+    .listlight{
+        background-color: rgba(255, 255, 255,.9);
+    }
+    .buttondark{
+        color: white;
+    }
+    .buttonlight{
+        color: black;
+    }
     .title{
-        font-size: 1.2em;
+        font-size: 2em;
+        width: 80vw;
+        padding: 0;
+        margin-top: .4em;
     }
     .listItem{
-        font-size: .6em;
+        font-size: 2em;
+
     }
 }
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .buttonOpenCloseR{
+        margin-left: .4em;
+        margin-top: .4em;
+        display: inline;
+        font-size: 2em;
+        border-radius: 50%;
+    }
     .container{
-        gap: 2em;
+        gap: 1em;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+    .list{
+        width: 100%;
+        gap: 1em;
+        height: 100vh;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: -150vh;
+        transition: 1s;
+        z-index: -1;
+        padding: 0;
+    }
+    .listView{
+        top: 0;
+    }
+    .listdark{
+        background-color: rgba(0, 0, 0,.9);
+    }
+    .listlight{
+        background-color: rgba(255, 255, 255,.9);
+    }
+    .buttondark{
+        color: white;
+    }
+    .buttonlight{
+        color: black;
+    }
+    .title{
+        font-size: 2em;
+        width: 80vw;
+        padding: 0;
+        margin-top: .4em;
+    }
+    .listItem{
+        font-size: 2em;
+
     }
 }

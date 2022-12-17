@@ -42,11 +42,12 @@
     width: 70%;
 }
 .containerImage{
-    width: 40%;
+    width: 30%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     visibility: hidden;
+    transition: 2s;
 }
 .image{
     min-width: 370px;
@@ -86,5 +87,70 @@
     }
     to{
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 360px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1em;
+    }
+    .containerInfo{
+        width: 90%;
+        order: 2;
+    }
+    .title{
+        font-size: 4em;
+        width: 90%;
+    }
+    .subtitle{
+        font-size: 2em;
+        width: 90%;
+
+    }
+    .containerImage{
+        order: 1;
+        width: 80%;
+        margin-top: 6em;
+    }
+    .description{
+        width: 90%;
+    }
+    .button{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1em;
+    }
+    .containerInfo{
+        width: 90%;
+        order: 2;
+    }
+    .title{
+        font-size: 4em;
+        width: 90%;
+    }
+    .subtitle{
+        font-size: 2em;
+        width: 90%;
+
+    }
+    .containerImage{
+        order: 1;
+        width: 80%;
+        margin-top: 6em;
+    }
+    .description{
+        width: 90%;
+    }
+    .button{
+        width: 60%;
     }
 }

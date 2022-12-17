@@ -2,12 +2,16 @@
 
 *{
     box-sizing: border-box;
+/*     border: 1px solid red; */
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     margin: 0;
+}
+#root{
+    overflow-x: hidden;
 }
 :root{
     --color-backgroundDark:rgb(36, 36, 36);

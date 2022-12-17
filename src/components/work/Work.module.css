@@ -56,6 +56,9 @@
         align-items: center;
         gap: 1em;
     }
+    .title{
+        font-size: 2.5em;
+    }
 }
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
     .container{

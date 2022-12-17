@@ -78,6 +78,15 @@
     .container{
         height: auto;
     }
+    .titlePrincipal{
+        font-size: 2.5em;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+    .description{
+        font-size: 1em;
+    }
     .cardContainer{
         flex-direction: column;
         align-items: center;
@@ -90,6 +99,15 @@
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
     .container{
         height: auto;
+    }
+    .titlePrincipal{
+        font-size: 4em;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+    .description{
+        font-size: 1em;
     }
     .cardContainer{
         flex-direction: column;
