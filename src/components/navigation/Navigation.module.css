@@ -74,6 +74,7 @@
         display: inline;
         font-size: 2em;
         border-radius: 50%;
+        cursor: pointer;
     }
     .container{
         gap: 1em;
@@ -126,6 +127,7 @@
         display: inline;
         font-size: 2em;
         border-radius: 50%;
+        cursor: pointer;
     }
     .container{
         gap: 1em;
