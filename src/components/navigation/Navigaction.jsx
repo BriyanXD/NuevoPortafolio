@@ -20,11 +20,9 @@ const Navigaction = () => {
         await setView(!view);
         if(view){
             refButton.current.classList.add(styles.listView)
-        console.log(refButton.current.classList)
     }
         else {
             refButton.current.classList.remove(styles.listView)
-            console.log(refButton.current.classList)
         }
     }
     const handleClose = () => {

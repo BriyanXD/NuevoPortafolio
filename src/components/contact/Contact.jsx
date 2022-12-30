@@ -7,12 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
-
+    
+    const {VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY} = import.meta.env;
+    
     const [data, setData] = useState({user_name:"",user_email:"",user_message:""});
 
     const {theme} = useContext(ThemeContext);
 
-    const {VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY} = import.meta.env;
 
     const sendEmail = e => {
         e.preventDefault();
@@ -21,7 +22,7 @@ const Contact = () => {
         .catch(error => console.log(error));
     }
     const saveData = e => {
-        
+
         setData({...data, [e.target.name]:e.target.value})
         
     }

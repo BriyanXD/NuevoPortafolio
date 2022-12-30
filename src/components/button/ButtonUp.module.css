@@ -2,7 +2,19 @@
     height: 4em;
     width: 4em;
     position: fixed;
-    background-color: aqua;
     bottom: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.icon{
+    width: 80%;
+    height: 80%;
+    color: white;
+}
+.disable{
+    display: block;
 }

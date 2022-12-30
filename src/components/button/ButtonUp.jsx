@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import styles from "./ButtonUp.module.css";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowUp} from "@fortawesome/free-solid-svg-icons"
 
 const ButtonUp = () => {
 
-    const handleBut = () => {
-        console.log(window.screenY)
-    }
+    const buttonRef = useRef();
+
     return (
-        <div  className={styles.container} onScroll={handleBut}>
-        </div>
+            <a ref={buttonRef} className={styles.container} href="#home">
+                <FontAwesomeIcon className={styles.icon} icon={faArrowUp}/>
+            </a>
     );
 }
 
