@@ -6,6 +6,7 @@ import myWork from "../../assets/json/myWorks.json";
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext";
+import { Helmet } from 'react-helmet';
 
 const Modal = () => {
 
@@ -22,6 +23,9 @@ const Modal = () => {
 
     return (
         <section className={`${styles.container} ${styles[theme]}`}>
+            <Helmet>
+                <title>Briyan Bohtelo | {work.name}</title>
+            </Helmet>
             <div className={styles.containerButton}>
                 <Link className={`${styles.closeButton} ${styles[`close${theme}`]}`} to="/">{"<"}</Link>
             </div>

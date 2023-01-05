@@ -37,11 +37,11 @@ const Navigaction = () => {
                         <span className={styles.guion}>_</span>
                     </Link>
                 <ul className={`${styles.list} ${styles[`list${theme}`]}`}  ref={refButton}>
-                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#home">Home</a></li>
-                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#experience">Experience</a></li>
-                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#work">Work</a></li>
-                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#abount">Abount</a></li>
-                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#contact">Contact</a></li>
+                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#home">Inicio</a></li>
+                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#experience">Experiencia</a></li>
+                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#work">Trabajo</a></li>
+                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#abount">Sobre mi</a></li>
+                    <li className={styles.listItem}><a onClick={handleButton} className={`${styles.link} ${styles[`link${theme}`]}`} href="#contact">Contacto</a></li>
                     <li className={styles.listItem}>
                         <button className={`${styles.button} ${styles[`link${theme}`]}`} onClick={handleClose}><FontAwesomeIcon onClick={handleButton} icon={theme === 'light'? faSun: faMoon}/></button>
                     </li>

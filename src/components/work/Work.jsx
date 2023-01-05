@@ -30,7 +30,7 @@ const Work = () => {
 
     return (
         <section className={`${styles.container} ${styles[theme]}`} id='work'>
-            <h2 className={`${styles.title} ${styles[`title${theme}`]}`}>My Work</h2>
+            <h2 className={`${styles.title} ${styles[`title${theme}`]}`}>Mi trabajo</h2>
             <section ref={refExperience} className={styles.works}>
                 {works.map((element) => <CardWork work={element} key={element.name}/>)}
             </section>

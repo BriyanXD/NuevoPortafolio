@@ -6,8 +6,13 @@ import GitHub from '../icons/GitHub';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
 import emailjs from "@emailjs/browser";
+import Send from '../send/Send';
+
 const Contact = () => {
-    
+
+    const [view, setView] = useState(false);
+    const [status, setStatus] = useState(0);
+
     const {VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY} = import.meta.env;
     
     const [data, setData] = useState({user_name:"",user_email:"",user_message:""});
@@ -18,17 +23,23 @@ const Contact = () => {
     const sendEmail = e => {
         e.preventDefault();
         emailjs.sendForm(VITE_SERVICE_ID,VITE_TEMPLATE_ID,e.target,VITE_PUBLIC_KEY)
-        .then(response => console.log(response))
-        .catch(error => console.log(error));
+        .then(response =>{
+            setStatus(response.status)
+            setView(true)
+        })
+        .catch(error =>{
+            setStatus(error.status)
+            setView(true)
+        });
     }
     const saveData = e => {
 
         setData({...data, [e.target.name]:e.target.value})
-        
     }
 
     return (
         <section className={`${styles.container} ${styles[theme]}`} id='contact'>
+                <Send view={view} setView={setView} status={status}/>
                 <div className={styles.containerInfo}>
                 <h2 className={styles.title}>Contacto</h2>
                     <p className={styles.description}>Contactame para participar en tu equipo como desarrolador.</p>
@@ -53,7 +64,7 @@ const Contact = () => {
                     </div>
                     <textarea className={`${styles.textarea} ${styles[`input${theme}`]}`} name="user_message" id="message" placeholder='Mensaje' cols="30" rows="10" onChange={saveData}></textarea>
                     <div>
-                        <button className={styles.buttonSend} type="submit"><FontAwesomeIcon icon={faPaperPlane} className={`${styles.button} ${styles[`button${theme}`]}`}/></button>
+                        <button className={styles.buttonSend} type="submit" disabled={view}><FontAwesomeIcon icon={faPaperPlane} className={`${styles.button} ${styles[`button${theme}`]}`}/></button>
                     </div>
                 </form>
         </section>

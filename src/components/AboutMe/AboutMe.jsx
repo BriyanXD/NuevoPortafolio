@@ -4,6 +4,7 @@ import styles from "./AboutMe.module.css"
 import technologies from "../../assets/json/technologies.json";
 import Tooltip from '../tooltip/Tooltip';
 import ThemeContext from "../../context/ThemeContext"
+import { Helmet } from 'react-helmet';
 
 const AboutMe = () => {
 
@@ -11,7 +12,10 @@ const AboutMe = () => {
 
     return (
         <section className={`${styles.container} ${styles[theme]}`}>
-            <h2 className={styles.title}>About Me</h2>
+            <Helmet>
+                <title>Briyan Bohtelo | Habilidades</title>
+            </Helmet>
+            <h2 className={styles.title}>Sobre mi</h2>
             <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/'>Briyan<span className={styles.guion}>_</span></Link>
             <div className={styles.containerInfo}>
                 <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>FRONT-END</h3></div>

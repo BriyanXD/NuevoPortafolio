@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServer, faDesktop, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import ThemeContext from '../../context/ThemeContext';
 
-
 const Experience = () => {
 
     const {theme} = useContext(ThemeContext);
@@ -30,7 +29,7 @@ const Experience = () => {
 
     return (
         <section className={`${styles.container} ` + `${styles[theme]}`} id='experience'>
-            <h2 className={styles.titlePrincipal}>My Experience</h2>
+            <h2 className={styles.titlePrincipal}>Mi experiencia</h2>
             <div ref={refExperience} className={styles.cardContainer}>
                 <section className={`${styles.card} ${styles.cardFinal}`}>
                     <FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={faDesktop}/>

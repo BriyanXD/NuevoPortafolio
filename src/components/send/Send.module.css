@@ -1,0 +1,44 @@
+@import url(../../index.css);
+
+.container{
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    top: 1em;
+    right: 1em;
+    display: none;
+}
+.dark{
+    background-color: var(--card-backgroundDark);
+}
+.light{
+    background-color: var(--card-backgroundLight);
+}
+.view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerButton{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.text{
+    font-family: var(--font-text);
+}
+.button{
+    font-family: var(--font-title);
+    font-weight: 400;
+    border: 0;
+    cursor: pointer;
+}
+.buttondark{
+    background-color: var(--icon-dark);
+    color: var(--text-light);
+}
+.buttonlight{
+    background-color: var(--icon-light);
+    color: var(--text-dark);
+}
