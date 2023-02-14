@@ -16,6 +16,9 @@ const AboutMe = () => {
                 <title>Briyan Bohtelo | Habilidades</title>
             </Helmet>
             <h2 className={styles.title}>Sobre mi</h2>
+            <div className={styles.containerButton}>
+                <input type="button" className={`${styles.closeButton} ${styles[`close${theme}`]}`} value="<" onClick={() => window.history.back()}/>
+            </div>
             <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/'>Briyan<span className={styles.guion}>_</span></Link>
             <div className={styles.containerInfo}>
                 <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>FRONT-END</h3></div>

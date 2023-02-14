@@ -81,3 +81,32 @@
     font-family: var(--font-title);
     font-weight: 400;
 }
+
+.closeButton{
+    width: 1em;
+    height: 1em;
+    margin: .3em;
+    border: 0;
+    text-decoration: none;
+    background-color: var(--card-background);
+    font-family: var(--font-text);
+    font-size: 3em;
+    cursor: pointer;
+    border-radius: 5%;
+    text-align: center;
+}
+.closelight{
+    color: var(--icon-light);
+}
+.closedark{
+    color: var(--icon-dark);
+}
+.closeButton:hover{
+    background-color: var(--border-gris);
+    color: white;
+}
+.containerButton{
+    position: fixed;
+    top: 7%;
+    width: 100%;
+}

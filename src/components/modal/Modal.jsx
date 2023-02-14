@@ -26,8 +26,9 @@ const Modal = () => {
             <Helmet>
                 <title>Briyan Bohtelo | {work.name}</title>
             </Helmet>
-            <div className={styles.containerButton}>
-                <Link className={`${styles.closeButton} ${styles[`close${theme}`]}`} to="/">{"<"}</Link>
+            <div className={styles.containerButton}>{/* 
+                <Link className={`${styles.closeButton} ${styles[`close${theme}`]}`} to="/">{"<"}</Link> */}
+                <input type="button" className={`${styles.closeButton} ${styles[`close${theme}`]}`} value="<" onClick={() => window.history.back()}/>
             </div>
             <article className={styles.info}>
                 <h2 className={styles.title}>{work.name}</h2>
