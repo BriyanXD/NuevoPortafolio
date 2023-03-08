@@ -1,4 +1,4 @@
-import React,{lazy, Suspense} from 'react'
+import React,{lazy, Suspense, useEffect} from 'react'
 import ReactDOM from 'react-dom/client'
 import {BrowserRouter,Routes, Route} from "react-router-dom"
 import './index.css'
@@ -15,6 +15,9 @@ const Error = lazy(() => import("./components/error/Error"))
 const Contact = lazy(() => import("./components/contact/Contact"))
 import Footer from './components/footer/Footer';
 import ButtonUp from './components/button/ButtonUp';
+
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
         <Suspense fallback={<Load/>}>

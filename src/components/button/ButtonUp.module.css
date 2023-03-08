@@ -1,9 +1,11 @@
+@import url(../../index.css);
+
 .container{
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +15,14 @@
 .icon{
     width: 80%;
     height: 80%;
-    color: white;
 }
 .disable{
-    display: block;
+    display: none;
+}
+
+.dark{
+    color: var(--color-backbroundLight);
+}
+.light{
+    color: var(--card-backgroundDark);
 }

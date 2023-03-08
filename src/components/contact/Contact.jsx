@@ -1,7 +1,7 @@
 import React,{useContext, useState} from 'react';
 import styles from "./Contact.module.css";
 import ThemeContext from "../../context/ThemeContext";
-import Linkedin from '../icons/linkedin';
+import Linkedin from '../icons/Linkedin';
 import GitHub from '../icons/GitHub';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
