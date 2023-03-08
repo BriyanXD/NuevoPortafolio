@@ -67,6 +67,7 @@
     text-decoration: none;
     padding: .5em;
     transition: 2s;
+    margin-bottom: 2%;
 }
 .buttonlight{
     background-color: var(--icon-light);
@@ -120,6 +121,7 @@
     }
     .button{
         width: 60%;
+    margin-bottom: 5%;
     }
 }
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
@@ -151,5 +153,6 @@
     }
     .button{
         width: 60%;
+        margin-bottom: 3%;
     }
 }

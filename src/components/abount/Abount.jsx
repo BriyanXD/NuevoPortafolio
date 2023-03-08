@@ -4,6 +4,7 @@ import dark from "../../assets/img/Perfildark.jpeg"
 import light from "../../assets/img/Perfillight.jpeg"
 import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext"
+import Tooltip from '../tooltip/Tooltip';
 
 const Abount = () => {
 
@@ -22,6 +23,9 @@ const Abount = () => {
             e[0].target.classList.add(`${styles.animation}`)
     }
 }
+    const handleClick = () => {
+        window.open('/src/assets/pdf/CV.pdf')
+    }
 
     useEffect(() => {
         let observer = new IntersectionObserver(handleIntersection, options);
@@ -39,7 +43,11 @@ const Abount = () => {
                     Estoy disponible para proyectos o para formar parte de tu equipo para aportar mi experiencia y crecer juntos.
                     Enviame un correo electronico o enviame un mensaje por Linkedin.
                 </p>
+                
                 <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about'>Mas sobre mis conocimientos...</Link>
+                <Tooltip  info="Ver Curriculum">
+                    <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/about' onClick={handleClick}>Ver mi CV</Link>
+                </Tooltip>
             </div>
             <div ref={refExperience} className={styles.containerImage}>
                 <img className={styles.image} src={theme === 'dark' ? dark : light} alt="" />

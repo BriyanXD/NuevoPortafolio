@@ -40,6 +40,10 @@
     font-weight: 400;
     font-size: 4em;
 }
+.habilidad{
+    margin-left: 2%;
+    font-family: var(--font-text);
+}
 .containerInfo{
     width: 90%;
     height: 80vh;

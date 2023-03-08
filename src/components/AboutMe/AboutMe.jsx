@@ -21,6 +21,10 @@ const AboutMe = () => {
             </div>
             <Link className={`${styles.button} ${styles[`button${theme}`]}`} to='/'>Briyan<span className={styles.guion}>_</span></Link>
             <div className={styles.containerInfo}>
+                <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>HABILIDADES BLANDAS</h3></div>
+                <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
+                    {technologies.habilidades.map(element => <p className={styles.habilidad}>{element}</p>)}
+                </div>
                 <div className={styles.containerSubtitle}><h3 className={styles.subtitle}>FRONT-END</h3></div>
                 <div className={`${styles.containerImages} ${styles[`container${theme}`]}`}>
                     {technologies.frontend.map(element => <Tooltip key={element.name} info={element.name}><img className={styles.image} src={element.image} alt={element.name} /></Tooltip> )}

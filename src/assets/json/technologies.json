@@ -1,6 +1,14 @@
 {
     "frontend":[
         {
+            "name":"TypeScript",
+            "image":"/src/assets/img/typecript.png"
+        },
+        {
+            "name":"JavaScript",
+            "image":"/src/assets/img/javascript.png"
+        },
+        {
             "name":"HTML",
             "image":"/src/assets/img/html.png"
         },
@@ -17,16 +25,8 @@
             "image":"/src/assets/img/redux.png"
         },
         {
-            "name":"NextJS",
-            "image":"/src/assets/img/next.png"
-        },
-        {
             "name":"MaterialUI",
             "image":"/src/assets/img/materialui.png"
-        },
-        {
-            "name":"Less",
-            "image":"/src/assets/img/less.png"
         },
         {
             "name":"Sass",
@@ -34,6 +34,10 @@
         }
     ],
     "backend":[
+        {
+            "name":"TypeScript",
+            "image":"/src/assets/img/typecript.png"
+        },
         {
             "name":"NodeJS",
             "image":"/src/assets/img/node.jpg"
@@ -65,11 +69,13 @@
             "image":"/src/assets/img/mysql.png"
         }
     ],
+    "habilidades":[
+        "Autodidacta",
+        "Comunicativo",
+        "Aprendizaje rapido",
+        "Disciplinado"
+    ],
     "others":[
-        {
-            "name":"JavaScript",
-            "image":"/src/assets/img/javascript.png"
-        },
         {
             "name":"NPM",
             "image":"/src/assets/img/npm.png"
@@ -112,7 +118,7 @@
         },
         {
             "name":"Illustrator",
-            "image":"/src/assets/img/illustrator.png"
+            "image":"/src/assets/img/Illustrator.png"
         },
         {
             "name":"Photopea",
@@ -121,6 +127,10 @@
         {
             "name":"C",
             "image":"/src/assets/img/c.png"
+        },
+        {
+            "name":"Docker",
+            "image":"/src/assets/img/docker.png"
         }
     ]
 }

@@ -37,6 +37,7 @@
     font-size: 2em;
     cursor: pointer;
     transition: 1s;
+    margin-right: 5vh;
 }
 .icon:hover{
     transform: scale(1.2);
