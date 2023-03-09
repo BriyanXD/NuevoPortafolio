@@ -14,7 +14,7 @@
     top: -2em;
     z-index: 1;
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
 }
 .dark{
     background-color: var(--card-backgroundDark);
@@ -24,6 +24,6 @@
 }
 .container:hover > .info{
     opacity: 1;
-    transition: 1s;
-    transition-delay: 1s;
+    transition: .5s;
+    transition-delay: .5s;
 }

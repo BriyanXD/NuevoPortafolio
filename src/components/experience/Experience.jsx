@@ -34,12 +34,12 @@ const Experience = () => {
                 <section className={`${styles.card} ${styles.cardFinal}`}>
                     <FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={faDesktop}/>
                     <h3 className={styles.title}> FRONTEND</h3>
-                    <p className={styles.description}>Tengo experiencia desarrollando en React, React Native, CSS & HTML.</p>
+                    <p className={styles.description}>Tengo experiencia desarrollando en React, React & TypeScript, CSS & HTML.</p>
                 </section>
                 <section className={styles.card}>
                     <FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={ faServer } />
                     <h3 className={styles.title}> BACKEND</h3>
-                    <p className={styles.description}>Domino NodeJS & ExpressJS tambien manejo GraphQL.</p>
+                    <p className={styles.description}>Domino NodeJS & ExpressJS tambien manejo en menor medida GraphQL.</p>
                 </section>
                 <section className={styles.card}>
                     <FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={ faDatabase } />

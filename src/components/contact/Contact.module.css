@@ -25,9 +25,15 @@
     font-size: 1em;
 }
 .email{
+    width: 120%;
     font-family: var(--font-text);
     font-size: 1.3em;
     transition: 2s;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
 }
 .emaildark{
     color: var(--icon-dark);

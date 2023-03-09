@@ -51,6 +51,7 @@
 @media only screen and (max-width: 719px) and (min-width: 360px)  {
     .container{
         height: auto;
+        min-height: auto;
     }
     .works{
         flex-direction: column;
@@ -64,6 +65,7 @@
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
     .container{
         height: auto;
+        min-height: auto;
     }
     .works{
         flex-direction: column;

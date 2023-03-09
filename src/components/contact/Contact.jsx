@@ -1,4 +1,4 @@
-import React,{useContext, useState} from 'react';
+import React,{useContext, useRef, useState} from 'react';
 import styles from "./Contact.module.css";
 import ThemeContext from "../../context/ThemeContext";
 import Linkedin from '../icons/Linkedin';
@@ -7,11 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPaperPlane} from "@fortawesome/free-regular-svg-icons";
 import emailjs from "@emailjs/browser";
 import Send from '../send/Send';
+import Tooltip from "../../components/tooltip/Tooltip"
 
 const Contact = () => {
 
     const [view, setView] = useState(false);
     const [status, setStatus] = useState(0);
+
+    const emailRef = useRef(null);
 
     const {VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY} = import.meta.env;
     
@@ -37,13 +40,20 @@ const Contact = () => {
         setData({...data, [e.target.name]:e.target.value})
     }
 
+    const copyText = () => {
+        emailRef.current.select();
+        document.execCommand("copy");
+    }
+
     return (
         <section className={`${styles.container} ${styles[theme]}`} id='contact'>
                 <Send view={view} setView={setView} status={status}/>
                 <div className={styles.containerInfo}>
                 <h2 className={styles.title}>Contacto</h2>
                     <p className={styles.description}>Contactame para participar en tu equipo como desarrolador.</p>
-                    <a className={`${styles.email} ${styles[`email${theme}`]}`} href="">briyan.bohtelo@gmail.com</a>
+                    <Tooltip info="Click para copiar mi correo">
+                    <input className={`${styles.email} ${styles[`email${theme}`]}`} ref={emailRef} onClick={copyText} value="briyan.bohtelo@gmail.com"/>
+                    </Tooltip>
                     <div className={styles.containerIcons}>
                         <div className={styles.icon}>
                             <a href="https://www.linkedin.com/in/briyanbohtelo/" className={styles.icon} target='_BLANK'>

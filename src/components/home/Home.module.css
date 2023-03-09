@@ -2,7 +2,7 @@
 
 .container{
     background-color: var(--color-background);
-    background-image: url(../../assets/img/BackgroundHome1.jpg);
+    background-image: url(../../assets/img/background1280.jpg);
     background-size: cover;
     color: white;
     width: 100%;
@@ -29,6 +29,10 @@
 }
 
 @media only screen and (max-width: 719px) and (min-width: 320px)  {
+    .container{
+        background-image: url(../../assets/img/background640.jpg);
+        background-position: right;
+    }
     .title{
         font-size: 3em;
     }
@@ -37,6 +41,10 @@
     }
 }
 @media only screen and (max-width: 1280px) and (min-width: 720px)  {
+    .container{
+        background-image: url(../../assets/img/background1280.jpg);
+        background-position: right;
+    }
     .title{
         font-size: 4em;
     }
