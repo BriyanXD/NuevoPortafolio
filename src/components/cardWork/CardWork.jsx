@@ -17,7 +17,7 @@ const CardWork = ({work}) => {
             </div>
             <h3 className={`${styles.title} ${styles[`title${theme}`]}`}>{work.name}</h3>
             <p className={`${styles.rol} ${styles[`rol${theme}`]}`}>{work.rol}</p>
-            <Link className={styles.button} to={`/project/${work.name}`}><FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={faEye}/></Link>
+            <Link className={styles.button} to={`/project/${work.name}`} name={`Detalles de: ${work.name}`}><FontAwesomeIcon className={`${styles.icon} ${styles[`icon${theme}`]}`} icon={faEye}/></Link>
         </article>
     );
 }

@@ -4,7 +4,7 @@ import ThemeContext from "../../context/ThemeContext";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload} from "@fortawesome/free-solid-svg-icons"
 import Tooltip from "../tooltip/Tooltip"
-import CV from "../../assets/pdf/CV.pdf"
+import CV from "../../assets/pdf/BriyanBohteloCV.pdf"
 
 
 const Footer = () => {

@@ -22,7 +22,7 @@ const ButtonUp = () => {
 
 
     return (
-            <a ref={buttonRef} className={`${styles.container} ${styles[theme]}`} href="#home">
+            <a ref={buttonRef} className={`${styles.container} ${styles[theme]}`} href="#home" name="regresar al inicio">
                 <FontAwesomeIcon className={styles.icon} icon={faArrowUp}/>
             </a>
     );
