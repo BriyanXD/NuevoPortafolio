@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+	<title>LogoBriyan</title>
+	<defs>
+		<image  width="800" height="800" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgAQMAAADhvpQrAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAGVJREFUeJztwTEBAAAAwqD1T20Gf6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4DDuvAAFA0yWHAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #e6b454 } 
+		.s1 { fill: #313131 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<path id="Forma 1" class="s0" d="m0-3h800v806h-800z"/>
+	<path id="BB" class="s1" aria-label="BB"  d="m429.2 492.6h-36.5v81h36.5q20.7 0 30.6-9 10.3-9 10.3-31.5 0-20.2-11.2-30.1-10.8-10.4-29.7-10.4zm6.7 130.1h-43.2v83.3h43.2q20.3 0 30.6-9 10.8-9.5 10.8-32.5 0-20.2-11.2-31-11.3-10.8-30.2-10.8zm90 41.8q0 47.7-22 69.4-21.6 21.1-65.7 21.1h-93.6v-311.9h83.2q44.6 0 67.5 21.6 23 21.2 23 68.4 0 21.2-7.2 37.9-6.8 16.6-18.5 25.1 13.1 8.1 22.5 26.1 9.9 17.6 10.8 42.3zm125.6-171.9h-36.5v81h36.5q20.7 0 30.6-9 10.3-9 10.3-31.5 0-20.2-11.2-30.1-10.8-10.4-29.7-10.4zm6.7 130.1h-43.2v83.3h43.2q20.3 0 30.6-9 10.8-9.5 10.8-32.5 0-20.2-11.2-31-11.3-10.8-30.2-10.8zm90 41.8q0 47.7-22 69.3-21.6 21.2-65.7 21.2h-93.6v-311.9h83.2q44.6 0 67.5 21.6 23 21.2 23 68.4 0 21.2-7.2 37.8-6.8 16.7-18.5 25.2 13.1 8.1 22.5 26.1 9.9 17.6 10.8 42.3z"/>
+</svg>

@@ -6,13 +6,13 @@
         "repo":"https://github.com/BriyanXD/PI-Dogs",
         "web":"https://dogs-app-br.vercel.app/",
         "rol":"Front-End Developer & Back-End Developer",
-        "image":"/src/assets/img/DogApi.jpg",
+        "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385311/DogApi/DogApi_tgyi3z.jpg",
         "client":"Henry(Academico)",
-        "images":["/src/assets/img/dogapi1.png",
-        "/src/assets/img/dogapi2.png",
-        "/src/assets/img/dogapi3.png",
-        "/src/assets/img/dogapi4.png",
-        "/src/assets/img/dogapi5.png"]
+        "images":["https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385310/DogApi/dogapi1_pseghh.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385311/DogApi/DogApi_tgyi3z.jpg",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385311/DogApi/dogapi4_jgxugv.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385311/DogApi/dogapi5_utvlm2.png"
+    ]
     },
     {
         "name":"ConcerTeck",
@@ -21,16 +21,17 @@
         "repo":"https://github.com/BriyanXD/concerTeck",
         "web":"https://concer-teck-front-end.vercel.app/",
         "rol":"Front-End Developer & Back-End Developer",
-        "image":"/src/assets/img/concerteck.jpg",
+        "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385836/ConcerTeck/concerteck_zpzcwx.jpg",
         "client":"Henry(Academico)",
-        "images":["/src/assets/img/concerteck1.png",
-        "/src/assets/img/concerteck2.png",
-        "/src/assets/img/concerteck3.png",
-        "/src/assets/img/concerteck4.png",
-        "/src/assets/img/concerteck5.png",
-        "/src/assets/img/concerteck6.png",
-        "/src/assets/img/concerteck7.png",
-        "/src/assets/img/concerteck8.png",
-        "/src/assets/img/concerteck9.png"]
+        "images":["https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385836/ConcerTeck/concerteck_zpzcwx.jpg",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385843/ConcerTeck/concerteck2_csf4zz.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385840/ConcerTeck/concerteck3_usx2dx.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385843/ConcerTeck/concerteck4_eetpwl.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385840/ConcerTeck/concerteck5_jblyu1.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385842/ConcerTeck/concerteck6_jt2jad.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385844/ConcerTeck/concerteck7_gmyasy.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385842/ConcerTeck/concerteck8_py6czr.png",
+        "https://res.cloudinary.com/dai2tdyfd/image/upload/v1678385844/ConcerTeck/concerteck9_cz0wv4.png"
+    ]
     }
 ]

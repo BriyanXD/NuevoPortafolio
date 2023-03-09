@@ -13,6 +13,7 @@ const Send = ({view, setView, status}) => {
         containerRef.current.classList.remove(styles.view)
     }
 
+
     useEffect(() => {
         if(view){
             containerRef.current.classList.add(styles.view)

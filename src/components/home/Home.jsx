@@ -11,7 +11,7 @@ const Home = () => {
                 <meta name="description" content="Portafolio profesional de Briyan Angel Bohtelo como full stack web developer" />
             </Helmet>
             <h1 className={styles.title}>BRIYAN BOHTELO</h1>
-            <h2 className={styles.subtitle}>FULL STACK DEVELOPER & APP DEVELOPER</h2>
+            <h2 className={styles.subtitle}>FULL STACK DEVELOPER & WEB DEVELOPER</h2>
         </section>
     );
 }

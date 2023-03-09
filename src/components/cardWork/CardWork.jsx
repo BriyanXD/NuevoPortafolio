@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import ThemeContext from "../../context/ThemeContext"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
-import Tooltip from '../tooltip/Tooltip';
 
 const CardWork = ({work}) => {
 
     const {theme} = useContext(ThemeContext);
+
 
     return (
         <article className={`${styles.container} ${styles[theme]}`}>

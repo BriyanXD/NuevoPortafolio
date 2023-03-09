@@ -4,7 +4,6 @@ import dark from "../../assets/img/Perfildark.jpeg"
 import light from "../../assets/img/Perfillight.jpeg"
 import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext"
-import Tooltip from '../tooltip/Tooltip';
 
 const Abount = () => {
 
