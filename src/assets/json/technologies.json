@@ -2,71 +2,82 @@
     "frontend":[
         {
             "name":"TypeScript",
-            "image":"/src/assets/img/typecript.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386739/Tecnologies/typecript_mgwp7p.png"
         },
         {
             "name":"JavaScript",
-            "image":"/src/assets/img/javascript.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/javascript_sz3aeo.png"
         },
         {
             "name":"HTML",
-            "image":"/src/assets/img/html.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/html_owmksh.png"
         },
         {
             "name":"CSS",
-            "image":"/src/assets/img/css.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/css_xzkf8n.png"
         },
         {
             "name":"React",
-            "image":"/src/assets/img/react.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/react_c37dnk.png"
+            
         },
         {
             "name":"Redux",
-            "image":"/src/assets/img/redux.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/redux_i3tihb.png"
+            
         },
         {
             "name":"MaterialUI",
-            "image":"/src/assets/img/materialui.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/materialui_sc6tnv.png"
+            
         },
         {
             "name":"Sass",
-            "image":"/src/assets/img/sass.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/sass_u1xfwm.png"
+            
         }
     ],
     "backend":[
         {
             "name":"TypeScript",
-            "image":"/src/assets/img/typecript.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386739/Tecnologies/typecript_mgwp7p.png"
         },
         {
             "name":"NodeJS",
-            "image":"/src/assets/img/node.jpg"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/node_vmv2by.png"
+            
         },
         {
             "name":"ExpressJS",
-            "image":"/src/assets/img/express.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/express_lffjm9.png"
+            
         },
         {
             "name":"Sequelize",
-            "image":"/src/assets/img/sequelize.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/sequelize_lbtf2k.png"
+            
         },
         {
             "name":"GraphQL",
-            "image":"/src/assets/img/graphql.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/graphql_hkbqq0.png"
+            
         }
     ],
     "database":[
         {
             "name":"SQL",
-            "image":"/src/assets/img/sql.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/sql_qftshx.png"
+            
         },
         {
             "name":"Postgres",
-            "image":"/src/assets/img/postgres.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/postgres_no2b15.png"
+            
         },
         {
             "name":"MySQL",
-            "image":"/src/assets/img/mysql.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/mysql_gzuhte.png"
+            
         }
     ],
     "habilidades":[
@@ -77,60 +88,74 @@
     ],
     "others":[
         {
+            "name":"Docker",
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/docker_acbo00.png"
+            
+        },
+        {
             "name":"NPM",
-            "image":"/src/assets/img/npm.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/npm_iopya5.png"
+            
         },
         {
             "name":"Git",
-            "image":"/src/assets/img/git.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/git_unoycp.png"
+            
         },
         {
             "name":"GitHub",
-            "image":"/src/assets/img/github.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/github_rrq2zv.png"
+            
         },
         {
             "name":"SCRUM",
-            "image":"/src/assets/img/scrum.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/scrum_pabac6.png"
+            
         },
         {
             "name":"JWT",
-            "image":"/src/assets/img/jwt.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/jwt_ln0vpt.png"
+            
         },
         {
             "name":"Auth0",
-            "image":"/src/assets/img/auth0.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/auth0_manvol.png"
+            
         },
         {
             "name":"Postman",
-            "image":"/src/assets/img/postman.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/postman_huv7lp.png"
+            
         },
         {
             "name":"Insomnia",
-            "image":"/src/assets/img/insomnia.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/insomnia_wujzwe.png"
+            
         },
         {
             "name":"Webpack",
-            "image":"/src/assets/img/webpack.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/webpack_kdjaji.png"
+            
         },
         {
             "name":"Photoshop",
-            "image":"/src/assets/img/photoshop.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/photoshop_qngd4p.png"
+            
         },
         {
             "name":"Illustrator",
-            "image":"/src/assets/img/Illustrator.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/Illustrator_deb0gs.png"
+            
         },
         {
             "name":"Photopea",
-            "image":"/src/assets/img/photopea.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/photopea_eolrpy.png"
+            
         },
         {
             "name":"C",
-            "image":"/src/assets/img/c.png"
-        },
-        {
-            "name":"Docker",
-            "image":"/src/assets/img/docker.png"
+            "image":"https://res.cloudinary.com/dai2tdyfd/image/upload/v1678386737/Tecnologies/c_ukiqsv.png"
+            
         }
     ]
 }
