@@ -7,16 +7,15 @@ const ButtonUp = () => {
 
     const buttonRef = useRef();
     const { theme } = useContext(ThemeContext)
-
-    const calculateScroll = () => {
-        if(window.scrollY < 100){
-            buttonRef.current.classList.add(styles.disable)
-        }else{
-            buttonRef.current.classList.remove(styles.disable)
-        }
-    }
-
+    
     useEffect(() => {
+            const calculateScroll = () => {
+                if(window.scrollY < 100){
+                    buttonRef.current.classList.add(styles.disable)
+                }else{
+                    buttonRef.current.classList.remove(styles.disable)
+                }
+            }
         window.addEventListener("scroll" , calculateScroll)
         return () => window.removeEventListener("scroll", calculateScroll)
     })

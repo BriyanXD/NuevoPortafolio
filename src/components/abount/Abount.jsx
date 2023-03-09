@@ -13,21 +13,22 @@ const Abount = () => {
 
     const refExperience = useRef();
 
-    let options = {
-        root: null,
-        threshold: '0.30'
-      };
-
-    const handleIntersection = (e) => {
-        if(e[0].isIntersecting){
-            e[0].target.classList.add(`${styles.animation}`)
-    }
-}
     const handleClick = () => {
         window.open('/src/assets/pdf/CV.pdf')
     }
-
+    
     useEffect(() => {
+        let options = {
+            root: null,
+            threshold: '0.30'
+          };
+    
+        const handleIntersection = (e) => {
+            if(e[0].isIntersecting){
+                e[0].target.classList.add(`${styles.animation}`)
+                observer.disconnect()
+        }
+    }
         let observer = new IntersectionObserver(handleIntersection, options);
         observer.observe(refExperience.current);
         return () => observer.disconnect();

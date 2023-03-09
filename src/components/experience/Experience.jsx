@@ -8,23 +8,25 @@ const Experience = () => {
 
     const {theme} = useContext(ThemeContext);
 
+    
     const refExperience = useRef();
-
-    let options = {
-        root: null,
-        threshold: '0.30'
-      };
-
-    const handleIntersection = (e) => {
-        if(e[0].isIntersecting){
-            e[0].target.classList.add(`${styles.animation}`)
-    }
-}
-
+    
     useEffect(() => {
+        let options = {
+            root: null,
+            threshold: '0.30'
+          };
+
+        const handleIntersection = (e) => {
+            if(e[0].isIntersecting){
+                e[0].target.classList.add(`${styles.animation}`)
+                observer.disconnect();
+            }
+    }
         let observer = new IntersectionObserver(handleIntersection, options);
         observer.observe(refExperience.current);
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect()};
     }, []);
 
     return (
