@@ -24,7 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <BrowserRouter>
         <ThemeProvider>
           <Routes>
-            <Route path='*' element={<Error/>}/>
             <Route path='/' element={<>
                 <Navigation/>
                 <Home/>
@@ -37,6 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             </>}/>
             <Route path='/project/:name' element={<Modal/>}/>
             <Route path='/about' element={<AboutMe/>}/>
+            <Route path='*' element={<Error/>}/>
           </Routes>
         </ThemeProvider>
         </BrowserRouter>
