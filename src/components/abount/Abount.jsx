@@ -5,6 +5,7 @@ import light from "../../assets/img/Perfillight.jpeg"
 import { Link } from 'react-router-dom';
 import ThemeContext from "../../context/ThemeContext"
 import CV from "../../assets/pdf/BriyanBohteloCV.pdf"
+import Carrusel from '../carrusel/Carrusel';
 
 const Abount = () => {
 
@@ -35,7 +36,8 @@ const Abount = () => {
     }, []);
 
     return (
-        <section id='abount' className={`${styles.container} ${styles[theme]}`}>
+        <section>
+        <div id='abount' className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.containerInfo}>
                 <h2 className={styles.title}>Briyan<br/>  Bohtelo</h2>
                 <h3 className={styles.subtitle}>FULLSTACK DEVELOPER</h3>
@@ -48,6 +50,8 @@ const Abount = () => {
             <div ref={refExperience} className={styles.containerImage}>
                 <img className={styles.image} src={theme === 'dark' ? dark : light} alt="" />
             </div>
+        </div>
+        <Carrusel/>
         </section>
     );
 }
